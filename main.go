@@ -38,7 +38,7 @@ func main() {
 func handleConnection(conn net.Conn) {
 
     conn.Write([]byte("HTTP/1.0 200 OK\n\n"))
-    conn.Write([]byte("Thanks for using the okroshka.net WhereMI service!\n"))
+    conn.Write([]byte("Thank you for using the okroshka.net WhereMI service!\n"))
     conn.Write([]byte("Your TCP source address is: " + conn.RemoteAddr().String() + "\n"))
     conn.Write([]byte("Goodbye!\n"))
 
